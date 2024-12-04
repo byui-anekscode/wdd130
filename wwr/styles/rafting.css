@@ -10,9 +10,10 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    width: 800px;
 }
 
 .roboto-thin {
@@ -47,6 +48,42 @@ a:hover {
     text-decoration: underline;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
+    background-color: var(--background-color);
+    color: rgb(3, 26, 31);
+    padding: 1rem;
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+    max-width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -54,7 +91,7 @@ a:hover {
     overflow: hidden;
 }
 
-.hero img{
+.hero img {
     width: 100%;
     display: block;
     height: auto;
@@ -72,7 +109,7 @@ a:hover {
     text-align: center;
 }
 
-.hero article{
+.hero article {
     position: absolute;
     left: 0%;
     background-color: rgba(237, 233, 233, 0.6);
@@ -91,4 +128,52 @@ a:hover {
     width: 30%;
     height: auto;
     border-radius: 5px;
+}
+
+.history {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.history h2{
+    margin-bottom: 1rem;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.adventures img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.adventures figcaption {
+    margin-top:0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
 }
