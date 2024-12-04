@@ -5,14 +5,16 @@
     --text-color: #0c0527; 
     --background-color: #57c8dc;
 }
+
 body {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
-    roboto-thin {
+
+.roboto-thin {
         font-weight: 100;
         font-style: normal;
       }
@@ -28,7 +30,6 @@ p {
     line-height: 1.6;
     margin: 0.5rem 0;
 }
-
 
 a img {
     text-decoration: none;
