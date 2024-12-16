@@ -39,7 +39,7 @@ a img {
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -146,6 +146,13 @@ main h1 {
     color: var(--primary-color);
 }
 
+.intro-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +243,7 @@ main h1 {
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
-    padding: 0.75rem;
+    padding: 10;
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -261,7 +268,7 @@ main h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: var(--background-color) 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
