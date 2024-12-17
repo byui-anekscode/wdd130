@@ -90,6 +90,7 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+
 .hero {
     position: relative;
     width: 100%;
@@ -115,6 +116,120 @@ nav ul li a {
     text-align: center;
 }
 
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cta button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #999;
+}
+
+.lf-player-btn {
+    color: #999; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lf-player-btn.active {
+    color: #555; 
+    background-color: #cccccc; 
+    border: 1px solid #bbb; 
+}
+
+.trip-descriptions {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.trip-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.trip-card p {
+    padding: 0 1rem 1rem;
+    color: var(--text-color);
+}
+
+.trip-table {
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-table tr:hover {
+    background-color: #ddd;
+}
 .hero article {
     position: absolute;
     left: 0%;
@@ -289,6 +404,11 @@ main h1 {
     color: #999; 
     background-color: #f0f0f0; 
     border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
   
   .lf-player-btn.active {
